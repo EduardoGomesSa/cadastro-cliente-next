@@ -1,5 +1,5 @@
 export default class Cliente{
-    id:number
-    nome:string
-    email:string
+    id:number = 0
+    nome:string = ""
+    email:string = ""
 }

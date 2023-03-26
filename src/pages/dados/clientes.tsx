@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import Cliente from "../../models/Cliente"
 
 export default function Clientes(){
-    const [clientes, setClientes] = useState<Cliente>([])
+    const [clientes, setClientes] = useState<Cliente[]>([])
 
     useEffect(() => {
         fetch('http://127.0.0.1:8000/api/clientes')
