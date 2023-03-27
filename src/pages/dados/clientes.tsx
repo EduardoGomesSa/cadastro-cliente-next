@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import Cliente from "../../models/Cliente"
+import Cliente from "../../models/cliente"
 
 export default function Clientes(){
     const [clientes, setClientes] = useState<Cliente[]>([])
