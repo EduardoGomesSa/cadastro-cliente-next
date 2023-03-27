@@ -1,0 +1,13 @@
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e17572;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #e17572;
+}

@@ -1,5 +1,7 @@
 .header{
     display: flex;
+    flex-direction: column;
     height: 100px;
-    background-color: red;
+    background-color: #2b0b16;
+    color: white;
 }

@@ -1,5 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from "react"
 import axios from 'axios'
+import styles from '../styles/Cadastro.module.css'
 
 interface cliente {
     nome?: string
@@ -30,15 +31,15 @@ export default function CadastroCliente(){
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <p><label>Nome: </label><input type="text" name="nome" value={cliente?.nome} onChange={handleChange} /></p>
-                <p><label>E-mail: </label><input type="email" name="email" value={cliente?.email} onChange={handleChange} /></p>
-                <p><label>Logradouro: </label><input type="text" name="logradouro" value={cliente?.logradouro} onChange={handleChange} /></p>
-                <p><label>Cidade: </label><input type="text" name="cidade" value={cliente?.cidade} onChange={handleChange} /></p>
-                <p><label>Estado: </label><input type="text" name="estado" value={cliente?.estado} onChange={handleChange} /></p>
-                <p><label>CEP: </label><input type="text" name="cep" value={cliente?.cep} onChange={handleChange} /></p>
-                <p><button type="submit">Submit</button></p>
+        <div className={styles.cadastro}>
+            <form onSubmit={handleSubmit} className={styles.formulario}>
+                <label>Nome: </label><input type="text" name="nome" value={cliente?.nome} onChange={handleChange} />
+                <label>E-mail: </label><input type="email" name="email" value={cliente?.email} onChange={handleChange} />
+                <label>Logradouro: </label><input type="text" name="logradouro" value={cliente?.logradouro} onChange={handleChange} />
+                <label>Cidade: </label><input type="text" name="cidade" value={cliente?.cidade} onChange={handleChange} />
+                <label>Estado: </label><input type="text" name="estado" value={cliente?.estado} onChange={handleChange} />
+                <label>CEP: </label><input type="text" name="cep" value={cliente?.cep} onChange={handleChange} />
+                <button type="submit">Submit</button>
                 
             </form>
         </div>
