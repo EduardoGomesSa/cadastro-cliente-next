@@ -5,8 +5,8 @@ export default function Footer(){
         <div className={styles.footer}>
             <label>&shy; Eduardo - 2023</label>
             <label>
-                <a href="#">GitHub</a>
-                <a href="#">Linkedln</a>
+                <a href="#"><img src="./images/github.svg" alt="" /></a>
+                <a href="#"><img src="./images/linkedin.svg" alt="" /></a>
             </label>
         </div>
     )
