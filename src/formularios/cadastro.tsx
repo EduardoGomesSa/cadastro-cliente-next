@@ -14,6 +14,17 @@ interface cliente {
 export default function CadastroCliente(){
     const [cliente, setCliente] = useState<cliente>()
 
+    const validatedCity = async (event:FormEvent<HTMLFormElement>) => {
+        event.preventDefault()
+
+        try{
+            const response = await axios.get(`https://api.postmon.com.br/v1/cep/${cliente?.cep}`)
+            console.log(response.data)
+        }catch(error:any){
+            console.log(error.response.data)
+        }
+    }
+
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault()
 
