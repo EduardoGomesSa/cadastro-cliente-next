@@ -33,14 +33,20 @@ export default function CadastroCliente(){
     return (
         <div className={styles.cadastro}>
             <form onSubmit={handleSubmit} className={styles.formulario}>
-                <label>Nome: </label><input type="text" name="nome" value={cliente?.nome} onChange={handleChange} />
-                <label>E-mail: </label><input type="email" name="email" value={cliente?.email} onChange={handleChange} />
-                <label>Logradouro: </label><input type="text" name="logradouro" value={cliente?.logradouro} onChange={handleChange} />
-                <label>Cidade: </label><input type="text" name="cidade" value={cliente?.cidade} onChange={handleChange} />
-                <label>Estado: </label><input type="text" name="estado" value={cliente?.estado} onChange={handleChange} />
-                <label>CEP: </label><input type="text" name="cep" value={cliente?.cep} onChange={handleChange} />
-                <button type="submit">Submit</button>
+                <fieldset className={styles.fieldset}>
+                    <legend>Dados pessoais: </legend>
+                    <label>Nome: </label><input type="text" name="nome" value={cliente?.nome} onChange={handleChange} />
+                    <label>E-mail: </label><input type="email" name="email" value={cliente?.email} onChange={handleChange} />
+                </fieldset>
+                <fieldset className={styles.fieldset}>
+                    <legend>Endereço: </legend>
+                    <label>Logradouro: </label><input type="text" name="logradouro" value={cliente?.logradouro} onChange={handleChange} />
+                    <label>Cidade: </label><input type="text" name="cidade" value={cliente?.cidade} onChange={handleChange} />
+                    <label>Estado: </label><input type="text" name="estado" value={cliente?.estado} onChange={handleChange} />
+                    <label>CEP: </label><input type="text" name="cep" value={cliente?.cep} onChange={handleChange} />
+                </fieldset>
                 
+                <button type="submit">Cadastrar</button>
             </form>
         </div>
     )

@@ -11,3 +11,8 @@
     align-items: left;
     margin-bottom: 10px;
 }
+
+.fieldset{
+    display: flex;
+    flex-direction: column;
+}
