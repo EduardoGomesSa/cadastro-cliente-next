@@ -22,7 +22,11 @@ export default function Clientes(){
                     <td>{cliente.id}</td>
                     <td>{cliente.nome}</td>
                     <td>{cliente.email}</td>
-                    <td>Editar | Deletar</td>
+                    <td>
+                        <a href="http://">Editar</a> 
+                        | 
+                        <a href="http://">Deletar</a>
+                    </td>
                 </tr>
             )
             }
