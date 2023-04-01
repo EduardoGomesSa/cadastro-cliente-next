@@ -22,6 +22,7 @@ export default function Clientes(){
                     <td>{cliente.id}</td>
                     <td>{cliente.nome}</td>
                     <td>{cliente.email}</td>
+                    <td>Editar | Deletar</td>
                 </tr>
             )
             }
@@ -36,6 +37,7 @@ export default function Clientes(){
                         <th>Id</th>
                         <th>Nome</th>
                         <th>E-mail</th>
+                        <th>Ações</th>
                     </tr>
                 </thead>
                 <tbody>
