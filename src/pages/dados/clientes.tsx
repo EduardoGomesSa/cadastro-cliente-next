@@ -15,13 +15,33 @@ export default function Clientes(){
             })
     }, [])
 
+    function mapping (){
+        return clientes.map(cliente => {
+            return (
+                <tr key={cliente.id}>
+                    <td>{cliente.id}</td>
+                    <td>{cliente.nome}</td>
+                    <td>{cliente.email}</td>
+                </tr>
+            )
+            }
+        )
+    }
+
     return (
         <div>
-            {
-                clientes.map(cliente => (
-                    <div key={cliente.id}>{cliente.id} - {cliente.nome} - {cliente.email}</div>
-                ))
-            }
+            <table border={2}>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {mapping()}
+                </tbody>
+            </table>
         </div>
     )
 }
