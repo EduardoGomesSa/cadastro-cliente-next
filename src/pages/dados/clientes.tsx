@@ -23,7 +23,7 @@ export default function Clientes(){
                     <td>{cliente.nome}</td>
                     <td>{cliente.email}</td>
                     <td>
-                        <a href="http://">Editar</a> 
+                        <a href="../../formularios/atualizacao">Editar</a> 
                         | 
                         <a href="http://">Deletar</a>
                     </td>
