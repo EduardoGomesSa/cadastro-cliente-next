@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Cliente from "../../models/cliente"
+import Formulario from "../formulario"
 
 export default function Clientes(){
     const [clientes, setClientes] = useState<Cliente[]>([])
@@ -23,7 +24,7 @@ export default function Clientes(){
                     <td>{cliente.nome}</td>
                     <td>{cliente.email}</td>
                     <td>
-                        <a href="../../formularios/atualizacao">Editar</a> 
+                        <a href="http://localhost:3000/formulario"><Formulario tipoForm={"atualizacao"}></Formulario>Edicap</a> 
                         | 
                         <a href="http://">Deletar</a>
                     </td>

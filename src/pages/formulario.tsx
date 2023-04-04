@@ -13,9 +13,9 @@ export default function Formulario(props:FormularioProps){
         <div className={styles.formulario}>
             <Header />
             {
-                props.tipoForm === "cadastro" ? 
-                <Cadastro /> :
-                <AtualizacaoCliente />
+                props.tipoForm === "atualizacao" ? 
+                <AtualizacaoCliente /> :
+                <Cadastro />
             }
             
             <Footer />
