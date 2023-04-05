@@ -5,3 +5,7 @@
     background-color: #540e27;
     color: white;
 }
+
+.logo{
+    display: flex;
+}
