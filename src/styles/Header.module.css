@@ -7,7 +7,7 @@
 }
 
 .logo{
-    display: flex;
+    display: block;
     position: relative;
     float: left;
     height: 100%;
@@ -16,8 +16,8 @@
 }
 
 .cabecalho{
-    display: flex;
+    display: block;
     position: relative;
     float: right;
-    background-color: chocolate;
+    background-color: green;
 }
