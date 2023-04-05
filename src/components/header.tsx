@@ -6,7 +6,9 @@ export default function Header(){
             <div className={styles.logo}>
                 logo
             </div>
-            Aqui Ficará o cabeçalho
+            <div className={styles.cabecalho}>
+                aaaaaa
+            </div>
         </div>
     )
 }
