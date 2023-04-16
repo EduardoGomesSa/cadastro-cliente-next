@@ -1,0 +1,7 @@
+.cabecalho{
+    display: block;
+    width: 90%;
+    height: 100px;
+    float: right;
+    background-color: rgb(45, 225, 25);
+}

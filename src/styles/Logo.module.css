@@ -1,0 +1,6 @@
+.logo{
+    display: flex;
+    width: 10%;
+    height: 100px;
+    background-color: pink;
+}
