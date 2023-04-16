@@ -5,18 +5,3 @@
     background-color: #540e27;
     color: white;
 }
-
-.logo{
-    display: flex;
-    align-items:start;
-    align-content: start;
-    height: 100px;
-    width: 10%;
-    background-color: yellow;
-}
-
-.cabecalho{
-    display: flex;
-    align-items: end;
-    background-color: green;
-}
