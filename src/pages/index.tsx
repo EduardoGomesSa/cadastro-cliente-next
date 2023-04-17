@@ -1,3 +1,5 @@
+import Aside from '../components/aside'
+import Content from '../components/content'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import styles from '../styles/Home.module.css'
@@ -7,8 +9,8 @@ export default function Home() {
     <div className={styles.home}>
       <Header />
       <div>
-        <a href="dados/clientes">Ver clientes</a><br />
-        <a href="formulario">Adicionar cliente</a>
+        <Aside />
+        <Content />
       </div>
       <Footer />
     </div>
