@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.home}>
       <Header />
-      <div>
+      <div className={styles.content}>
         <Aside />
         <Content />
       </div>
