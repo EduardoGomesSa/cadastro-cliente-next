@@ -1,5 +1,6 @@
 .cadastro{
     display: flex;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     background-color: #e17572;
