@@ -1,3 +1,6 @@
 .aside{
     display: flex;
+    width: 50%;
+
+    background-color: darkgoldenrod;
 }
