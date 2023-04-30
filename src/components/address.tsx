@@ -1,4 +1,5 @@
 import Link from "next/link"
+import styles from "../styles/Address.module.css"
 
 interface AddressProps{
     text:string
@@ -7,7 +8,7 @@ interface AddressProps{
 
 export default function Address(props:AddressProps){
     return (
-        <div>
+        <div className={styles.address}>
             <Link href={props.link}>
                 {props.text}
             </Link>   
