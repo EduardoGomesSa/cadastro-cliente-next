@@ -1,4 +1,6 @@
 .address{
     display: flex;
     background-color: mediumslateblue;
+    margin-top: 20px;
+    padding: 10px;
 }

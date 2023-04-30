@@ -4,3 +4,10 @@
 
     background-color: darkgoldenrod;
 }
+
+.img{
+    height: 100vh; /* define a altura como 100% da altura da viewport */
+    width: 100%; /* define a largura como 100% da largura do elemento pai */
+    object-fit: cover; /* ajusta a imagem proporcionalmente ao tamanho do elemento */
+}
+  
