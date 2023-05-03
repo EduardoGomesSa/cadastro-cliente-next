@@ -4,3 +4,7 @@
     margin-top: 20px;
     padding: 10px;
 }
+
+.address:hover{
+    background-color: rgb(42, 10, 226);
+}
