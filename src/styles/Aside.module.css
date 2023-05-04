@@ -1,7 +1,8 @@
 .aside{
     display: flex;
     width: 50%;
-
+    height: 100vh;
+    
     background-color: darkgoldenrod;
 }
 
