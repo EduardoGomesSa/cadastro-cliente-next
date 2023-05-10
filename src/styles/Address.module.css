@@ -3,6 +3,7 @@
     background-color: mediumslateblue;
     margin-top: 20px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .address:hover{
